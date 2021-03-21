@@ -1,0 +1,29 @@
+<div class="menu">
+  <ul>
+    <li [ngClass]="{ 'selected-option': areSubusersOpen }">
+      <span (click)="openSubusers()" class="first-level">Usuarios</span>
+    </li>
+    <li [ngClass]="{ 'selected-option': areSubsectionsOpen }">
+      <span (click)="openSubsections()" class="first-level">Secciones</span>
+      <ul class="subsections">
+        <li [routerLink]="'home'">Home</li>
+        <li [routerLink]="'about'">About T&F</li>
+        <li [routerLink]="'courses'">Cursos</li>
+        <li [routerLink]="'annademas'">Sobre Anna de Mas</li>
+        <li [routerLink]="'crew'">T&F Crew</li>
+        <li [routerLink]="'shows'">Shows</li>
+        <li [routerLink]="'discounts'">Descuentos</li>
+        <li [routerLink]="'faq'">F.A.Q</li>
+      </ul>
+    </li>
+    <li [ngClass]="{ 'selected-option': areSubcoursesOpen }">
+      <span (click)="openSubcourses()" class="first-level">Cursos</span>
+      <ul class="subcourses">
+        <li [routerLink]="'courses/0'">Inicial</li>
+        <li [routerLink]="'courses/1'">Intermedio</li>
+        <li [routerLink]="'courses/2'">Workshops</li>
+        <li [routerLink]="'courses/3'">Fusion</li>
+      </ul>
+    </li>
+  </ul>
+</div>

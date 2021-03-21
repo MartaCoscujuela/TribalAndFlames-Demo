@@ -1,0 +1,61 @@
+.title h2{
+  font-family: 'Bebas Neue Regular';
+  color: #FA413E;
+  font-size: 81px;
+  text-align: right;
+  float: right;
+  max-width: 500px;
+}
+
+.description{
+  font-family: 'Rubik', sans-serif;
+}
+
+.whatis{
+  padding: 72px;
+
+}
+
+.whatis p{
+  font-size: 18px;
+  max-width: 920px;
+
+}
+
+a{
+  text-decoration: underline;
+  color: black;
+  font-weight: bold;
+}
+
+
+@media screen and (max-width: 1200px) {
+  .title h2{
+    font-size: 70px;
+  }
+}
+
+
+@media screen and (max-width: 992px) {
+  .title h2{
+    font-size: 50px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .whatis{
+    padding: 1em;
+
+  }
+
+  .whatis p{
+    font-size: 22px;
+  }
+
+  .title h2{
+    text-align: center;
+    float: none;
+    margin: 0.5em auto;
+
+  }
+}

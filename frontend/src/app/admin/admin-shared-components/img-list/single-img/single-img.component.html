@@ -1,0 +1,14 @@
+<div class="card mb-3">
+  <div class="background col-lg-9"  [ngStyle]="{'background-image': 'url('+getBackground+')'}">
+  </div>
+
+  <div class="buttons">
+    <button type="button" class="btn btn-primary m-2" (click)="deleteItem()"><fa-icon [icon]="iconTimes"></fa-icon></button>
+    <hr>
+    <button type="button" class="btn btn-primary m-2" [disabled]="isBottomItem()" (click)="changeOrder(-1)"><fa-icon [icon]="iconUp"></fa-icon></button>
+    <button type="button" class="btn btn-primary m-2" [disabled]="isTopItem()" (click)="changeOrder(1)"><fa-icon [icon]="iconDown"></fa-icon></button>
+
+  </div>
+
+
+</div>

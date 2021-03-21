@@ -1,0 +1,7 @@
+
+<div class="container p-5">
+    <app-text-title ref="faq-title" alignStyle="center"></app-text-title>
+    <app-question *ngFor="let question of questions" [question]="question"></app-question>
+</div>
+<app-text ref="faq-email" alignStyle="center"></app-text>
+<app-cta></app-cta>

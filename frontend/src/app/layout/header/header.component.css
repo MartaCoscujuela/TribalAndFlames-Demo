@@ -1,0 +1,146 @@
+  header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 200px;
+    background: #ddd;
+    color:#fff;
+    z-index: 1000;
+    text-align:center;
+    background-color: white;
+    background-image: url("/assets/img/header_bg.jpg");
+  }
+
+  .header-bar{
+    display: flex;
+    justify-content: space-between;
+    margin: 3em;
+  }
+
+  #rrss, #user{
+    display: flex;
+    align-items: center;
+  }
+
+  .icon-rrss{
+    padding-top: 4px;
+    padding-right: 0.5em;
+    font-size: 44px;
+    color: white;
+    position: relative;
+    top: -7px;
+  }
+
+  .lang{
+    padding-top: 5px;
+    padding-right: 0.5em;
+    display: flex;
+  }
+
+  .break {
+    flex-basis: 100%;
+    height: 0;
+  }
+
+  .user-icon{
+    font-size: 60px;
+    padding: 0 15px;
+  }
+
+  #ingresar{
+    padding-top: 9px;
+    font-size: 28px;
+    vertical-align: middle;
+  }
+
+  .logo{
+    margin: auto;
+    display: block;
+    opacity: 1;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top:50px;
+  }
+
+  .title{
+    margin: auto;
+    display: block;
+    opacity: 1;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 100px;
+    cursor: pointer;
+  }
+  .hide-logo{
+    width: 0;
+    opacity: 0;
+    -webkit-transition: all 0.7s;
+    -moz-transition: all 0.7s;
+    -ms-transition: all 0.7s;
+    -o-transition: all 0.7s;
+    transition: all 0.7s;
+  }
+
+
+
+@media screen and (max-width: 1200px) {
+
+  .title img {
+    width: 400px;
+  }
+
+  .logo{
+    width: 150px;
+  }
+
+  .lang{
+    width: 40px;
+  }
+
+  .user-icon{
+    height: 40px;
+    padding: 0 5px;
+  }
+  .icon-rrss{
+    font-size: 30px;
+    top: 0;
+  }
+
+  #ingresar{
+    font-size: 20px;
+    padding-top: 0;
+    padding-left: 5px;
+  }
+}
+
+
+@media screen and (max-width: 992px) {
+
+  .title img {
+    width: 275px;
+  }
+
+  .logo{
+    width: 140px;
+  }
+
+  .login{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #ingresar{
+    font-size: 16px;
+  }
+}
+
+
+@media screen and (max-width: 768px) {
+.header-bar{
+  display: none
+}
+}

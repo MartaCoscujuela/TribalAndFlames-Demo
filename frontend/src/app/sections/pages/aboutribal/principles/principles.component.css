@@ -1,0 +1,171 @@
+.principles{
+  background-color: #8A66B6;
+  padding: 80px 0;
+}
+
+.principles-grid{
+  max-width: 1200px;
+  margin: auto;
+  padding: 0;
+}
+
+.col{
+  margin: 0;
+  padding: 0.5em 0;
+  text-align: center;
+}
+
+.principle, .principle img{
+  width: 223px;
+  height: 223px;
+  position: relative;
+  z-index: 2;
+  cursor: pointer;
+  margin: auto;
+}
+
+.principle:hover::before {
+  width: 0;
+  height: 0;
+  border-top: 223px solid #00D48C;
+  border-left: 223px solid transparent;
+  left: 10px;
+  top: -10px;
+  content: "";
+  position: absolute;
+  z-index: 1;
+}
+
+.title-grid{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+h2{
+  font-size: 64px;
+  color: white;
+  font-family: 'Bebas Neue Regular', sans-serif;
+}
+
+.title-grid h2{
+  font-size: 64px;
+  text-align: left;
+  width: 223px;
+}
+
+.transcription{
+  color: white;
+  font-family: 'Rubik', sans-serif;
+  font-weight: lighter;
+  text-align: center;
+  max-width: 900px;
+  margin: auto;
+  margin-top: 30px;
+  padding: 0 0.2em;
+}
+
+.title-outside{
+  display: none;
+}
+
+@media (max-width: 1300px) {
+  .principle, .principle img{
+
+    height: 180px;
+    width: 180px;
+  }
+
+  .principle:hover::before {
+    border-top: 180px solid #00D48C;
+    border-left: 180px solid transparent;
+  }
+  .title-grid h2{
+    width: 180px;
+    font-size: 55px;
+
+  }
+
+  .title-outside{
+    display: none;
+  }
+}
+
+@media (max-width: 992px) {
+  .principles-grid{
+    max-width: 700px;
+  }
+
+  .principle, .principle img{
+    width: 223px;
+    height: 223px;
+  }
+
+  .principle:hover::before {
+    border-top: 223px solid  #00D48C;
+    border-left: 223px solid transparent;
+  }
+
+  .title-grid{
+    display: none;
+  }
+
+  .title-outside{
+    display: block;
+    text-align: center;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .principles-grid{
+    max-width: 500px;
+  }
+
+  .title-grid{
+    display: flex;
+  }
+
+  .title-grid h2{
+    width: 223px;
+  }
+
+  .title-outside{
+    display: none;
+  }
+}
+
+@media (max-width: 500px) {
+  .principle, .principle img{
+    width: 180px;
+    height: 180px;
+  }
+
+  .principle:hover::before {
+    border-top: 180px solid  #00D48C;
+    border-left: 180px solid transparent;
+  }
+
+  .title-grid h2{
+    width: 180px;
+    font-size: 55px;
+  }
+}
+@media (max-width: 500px) {
+
+  .principle, .principle img{
+    width: 150px;
+    height: 150px;
+  }
+
+
+  .principle:hover::before {
+    border-top: 150px solid  #00D48C;
+    border-left: 150px solid transparent;
+  }
+
+  .title-grid h2{
+    width: 150px;
+    font-size: 45px;
+  }
+}

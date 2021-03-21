@@ -1,0 +1,89 @@
+.foto{
+  background-image: url("/assets/img/01_about/objetivo/objetivo.jpg");
+  background-size: cover;
+  height: 500px;
+  background-position: center;
+}
+
+
+.objetivo{
+  background-color: #00DD92;
+  color: white;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  align-content: center;
+  justify-content: space-evenly;
+  padding: 2em 1em;
+}
+
+
+h2{
+  color: white;
+  font-family: 'Bebas Neue Regular', sans-serif;
+  font-size: 52px;
+}
+
+ul{
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+li{
+  font-family: "Century Schoolbook", cursive, serif;
+  font-style: italic;
+  color: white;
+  font-size: 40px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  line-height: 1.1em;
+  width: auto;
+}
+
+span{
+  position: relative;
+}
+
+ul li span:before {
+  background: transparent url(/assets/img/01_about/objetivo/tick.png) scroll 0 0 no-repeat;
+  content: "";
+  width: 18px;
+  height: 20px;
+  position: absolute;
+  left: -5px;
+  top: 2px;
+  background-position: center;
+}
+
+@media (max-width: 1200px) {
+  li{
+    font-size: 25px;
+  }
+
+  h2{
+    font-size: 40px;
+  }
+
+
+  .objetivo{
+    justify-content: center;
+  }
+
+  ul li span:before {
+    left: -12px;
+    top: -5px;
+  }
+
+}
+
+@media (max-width: 992px) {
+    li{
+      font-size: 20px;
+    }
+
+    h2{
+      font-size: 30px;
+    }
+
+}

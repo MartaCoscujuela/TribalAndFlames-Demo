@@ -1,0 +1,10 @@
+input {
+  margin: auto;
+  display: block;
+  border: none;
+  border-radius: 10px;
+  background-color: #ffe5cd;
+  padding: 0.5em 1em;
+  width: 90%;
+  max-width: 483px;
+}

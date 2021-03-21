@@ -1,0 +1,35 @@
+
+
+<div class="container">
+  <div class="row p-md-0 card-container">
+
+    <div class="card col-12 p-0 mt-5 m-lg-3">
+
+      <div class="card-header d-flex  justify-content-between d-flex align-items-center">
+        {{ name | uppercase }} - {{currentLang | uppercase}}
+<!--          <button (click)=changeLang() class="btn btn-primary float-right">ENG</button>
+ -->      </div>
+
+      <app-loading *ngIf="status === loadingStatus"></app-loading>
+
+      <div *ngIf="status !== loadingStatus" class="card-body d-block">
+      <div class="add"><button (click)=addSentence() class="btn btn-primary float-right">Añadir frase</button></div>
+        <app-error [status]="status"></app-error>
+          <form [formGroup]='form' (ngSubmit)="onSubmit()">
+
+          <div formArrayName="sentences">
+            <div class="p-1 d-flex sentence" *ngFor="let sentence of sentences.controls; let i=index">
+              <input type="text" class="col-11" [formControlName]='i'>
+
+              <button type="button" class="col-1" class="btn btn-primary m-2" (click)="deleteItem(i)"><fa-icon [icon]="iconTimes"></fa-icon></button>
+              <small class="col-12" *ngIf="sentence.errors && (sentence.touched)">
+                El campo no puede estar vacío
+              </small>
+            </div>
+          </div>
+          <button type="submit" class="btn btn-primary m-2">Guardar</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

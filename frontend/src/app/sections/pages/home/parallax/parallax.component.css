@@ -1,0 +1,81 @@
+.parallax-bg{
+  height: 420px;
+  background: linear-gradient(to top, #e4cab4, #ebd1ba, #f1d7c0, #f8dec7, #ffe5cd);
+  display: flex;
+  justify-content: space-evenly;
+  z-index: -5;
+  border-color: 5px solid #D73128;
+}
+
+
+.parallax-bg>div{
+  width: 33%;
+  height: 100%;
+}
+
+.parallax-bg .img{
+  height: 100%;
+  background-size: 100%;
+  background-repeat: no-repeat;
+
+}
+
+
+.parallax-img-0 div{
+  background-image: url("/assets/img/00_home/parallax/0.png");
+  background-position-x: 5%;
+
+}
+
+.parallax-img-1 div {
+  background-image: url("/assets/img/00_home/parallax/1.png");
+  background-position-x: 50%;
+
+}
+.parallax-img-2 div{
+  background-image: url("/assets/img/00_home/parallax/2.png");
+  background-position-x: 95%;
+
+}
+
+
+
+@media screen and (max-width: 1200px) {
+
+  .parallax-bg{
+    height: 200px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+
+  .parallax-bg{
+    height: 150px;
+  }
+
+}
+
+@media screen and (max-width: 768px) {
+
+  .parallax-bg{
+    height: 150px;
+  }
+
+  .parallax-bg .img{
+    background-size: 130%;
+  }
+
+
+  .parallax-img-0 div, .parallax-img-2 div,  .parallax-img-2 div{
+    background-position-x: 50%;
+  }
+
+
+}
+
+@media screen and (max-width: 400px) {
+
+  .parallax-bg{
+    height: 80px;
+  }
+}

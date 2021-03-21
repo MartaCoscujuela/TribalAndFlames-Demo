@@ -1,0 +1,15 @@
+.ventajas {
+    max-width: 1400px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-bottom: 2em;
+  }
+  
+  @media only screen and (max-width: 1280px) {
+    .ventajas {
+      max-width: 900px;
+    }
+  }
+  

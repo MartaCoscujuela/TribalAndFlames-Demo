@@ -1,0 +1,16 @@
+<header [ngClass]="{'opened': !isMenuCollapsed}">
+  <div class="navbar">
+  <a class="navbar-brand" href="#">TRIBAL AND FLAMES</a>
+  <div class="hamburger .d-none d-sm-block d-md-none" (click)="toggleHamburguer()" [ngClass]="{'hamburger--opened': !isMenuCollapsed}">
+    <div class="hamburger__slices">
+      <div class="hamburger__slice hamburger--slice-1"></div>
+      <div class="hamburger__slice hamburger--slice-2"></div>
+      <div class="hamburger__slice hamburger--slice-3"></div>
+      <div class="hamburger__slice hamburger--slice-4"></div>
+    </div>
+  </div>
+</div>
+<app-admin-menu *ngIf="!isMenuCollapsed" class=".d-none d-sm-block d-md-none"></app-admin-menu>
+
+</header>
+

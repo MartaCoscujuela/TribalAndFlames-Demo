@@ -1,0 +1,59 @@
+.contratanos{
+    width: 100%;
+    background-image: url("../../../../../assets/img/04_Shows/background.jpg");
+    position: relative;
+    margin-top: -80px; 
+    padding-top: 120px;
+}
+
+.info{
+    margin: auto;
+    max-width: 870px;
+    width: 100%;
+    padding: 20px;
+}
+
+app-text-title{
+    position: relative;
+}
+
+app-text-title::before {
+    background: transparent url(/assets/img/01_about/objetivo/tick.png) scroll 0 0 no-repeat;
+    content: "";
+    width: 18px;
+    height: 20px;
+    position: absolute;
+    left: -5px;
+    top: 2px;
+    background-position: center;
+  }
+
+  .video-container{
+      padding-top: 2em;
+      max-width: 1300px;
+      margin: auto;
+  }
+
+img{
+    border-radius: 10px;
+    width: 100%;
+    margin-bottom: 1em;
+
+  }
+
+  .video{
+      margin-bottom: 3em;
+  }
+
+  .title{
+    font-family: 'Bebas Neue Regular', sans-serif;
+    color:white;
+    font-size: 24px;
+}
+
+  .text{
+    font-family: 'Rubik', sans-serif;
+    color: white;
+    font-size: 18px;
+  }
+

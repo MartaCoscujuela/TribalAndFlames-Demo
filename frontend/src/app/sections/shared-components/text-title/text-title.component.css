@@ -1,0 +1,34 @@
+
+::ng-deep h2,
+::ng-deep h2 p {
+  font-size: 52px;
+}
+
+::ng-deep.bebas, ::ng-deep.century, ::ng-deep.rubik{
+  color: red
+}
+
+::ng-deep h2.bebas p{
+  font-family: 'Bebas Neue Regular', sans-serif;
+}
+
+::ng-deep h2.rubik p{
+  font-family: 'Rubik', sans-serif;
+}
+
+::ng-deep h2.century p{
+  font-family: 'Century Schoolbook', cursive, serif;
+  font-style: italic;
+}
+
+@media screen and (max-width: 1199px) {
+  h2 {
+    font-size: 1.7rem;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  h2 {
+    font-size: 1.3rem;
+  }
+}

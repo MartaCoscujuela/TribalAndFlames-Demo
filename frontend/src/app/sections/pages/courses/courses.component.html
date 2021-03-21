@@ -1,0 +1,15 @@
+<app-banner name="courses-banner"></app-banner>
+<div class="container p-5">
+  <app-text-title ref="courses-title" alignStyle="center"></app-text-title>
+  <app-text ref="courses-intro" alignStyle="center"></app-text>
+  <app-action-btn text="PRUEBA UNA CLASE GRATUITA" justifyStyle="center" (clicked)="onClick($event)"></app-action-btn>
+</div>
+<div class="cards">
+  <app-course-card *ngFor="let course of courses" courseId="0" [course]="course"></app-course-card>
+</div>
+<app-bottom-video
+  title="PRUEBA UNA CLASE BÁSICA GRATUITA"
+  subtitle="Así puedes hacerte una idea de cómo trabajamos :)"
+  [videoId]="videoId"
+  background="/assets/img/02_courses/bg.jpg"
+></app-bottom-video>

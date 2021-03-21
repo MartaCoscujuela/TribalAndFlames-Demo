@@ -1,0 +1,177 @@
+.menu-container{
+  background: rgb(0,0,0);
+  background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%);
+  height: 200px;
+  position: fixed;
+  z-index: 1000;
+  width: 100%;
+  text-align: center;
+  transition-property: height, background;
+  transition-duration:0.3s;
+}
+
+.solid-background{
+  height: 50px;
+  transition-property: height;
+  transition-duration:0.3s;
+}
+
+.solid-background .menu{
+  background: black;
+  transition-duration:0.3s;
+  transition-property: height;
+}
+
+.menu{
+  background: transparent;
+  transition-duration:0.3s;
+  transition-property: background;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  margin: auto;
+  display: block;
+  line-height: 1.4;
+  font-size: 27px;
+}
+
+.menu li{
+  font-family: 'Bebas Neue Regular';
+}
+
+li{
+  display: inline;
+  text-align: center;
+  padding-left: 1em;
+  padding-right: 1em;
+  vertical-align: middle;
+  line-height: 50px;
+  color: white;
+  cursor: pointer;
+
+}
+
+.active{
+  color: #7effac;
+}
+
+nav{
+  margin-top: 500px;
+}
+
+.hamburger {
+  position: fixed;
+  margin-left: auto;
+  width: 30px;
+  height: 24px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  top:28px;
+  right: 20px;
+}
+
+
+.hamburger__slices {
+position: relative;
+width: 100%;
+height: 24px;
+}
+
+.hamburger__slices .hamburger__slice {
+background-color: white;
+position: absolute;
+width: 100%;
+height: 2px;
+-webkit-transition: all 0.2s ease-in-out;
+-o-transition: all 0.2s ease-in-out;
+transition: all 0.2s ease-in-out;
+}
+
+.hamburger--slice-2 {
+top: 11px;
+}
+
+.hamburger--slice-3 {
+top: 11px;
+}
+.hamburger--slice-4 {
+top: 22px;
+}
+
+.hamburger--opened .hamburger--slice-1 {
+opacity: 0;
+}
+
+.hamburger--opened .hamburger--slice-4 {
+opacity: 0;
+}
+
+
+.hamburger--opened .hamburger--slice-2 {
+-webkit-transform: rotate(-45deg);
+-ms-transform: rotate(-45deg);
+transform: rotate(-45deg);
+}
+
+.hamburger--opened .hamburger--slice-3 {
+-webkit-transform: rotate(45deg);
+-ms-transform: rotate(45deg);
+transform: rotate(45deg);
+}
+
+@media screen and (max-width: 1200px) {
+  .menu{
+    font-size: 20px;
+  }
+  .li{
+    line-height: 40px;
+  }
+}
+
+@media screen and (max-width:992px) {
+  .menu{
+    font-size: 16px;
+  }
+
+  li{
+    line-height: 30px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+
+  /*.menu-container{
+    display: none
+  }*/
+
+
+  li{
+    display: block;
+    line-height: 60px;
+    font-size: 25px;
+    border-bottom: 1px solid #333;
+  }
+
+  .menu{
+    background-color: black;
+    height: 450px;
+    transition: all 0.3s;
+    padding: 0.3em 1em;
+
+  }
+
+  .menu.hidden{
+    padding: 0;
+    height: 0px;
+    transition: all 0.3s;
+  }
+  .menu-container{
+    background: none;
+
+  }
+
+}

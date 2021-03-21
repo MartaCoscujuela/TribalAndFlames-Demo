@@ -1,0 +1,7 @@
+<ngx-slick-carousel class="carousel"
+  [config]="slideConfig">
+
+<div ngxSlickItem *ngFor="let slide of slides" class="slide">
+  <div class="img" [ngStyle]="{'background-image':'url('+slide.img+')'}"></div>
+</div>
+</ngx-slick-carousel>

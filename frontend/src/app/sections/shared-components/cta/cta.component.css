@@ -1,0 +1,26 @@
+.cta {
+  background-color: white;
+  padding: 50px 1em 30px 1em;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+}
+
+button {
+  background-color: #fa413e;
+  margin: 0 1em;
+}
+
+p {
+  margin-top: 30px;
+  text-align: center;
+}
+
+a {
+  font-weight: bold;
+  text-decoration: underline;
+  font-family: 'Rubik', sans-serif;
+  color: black;
+}

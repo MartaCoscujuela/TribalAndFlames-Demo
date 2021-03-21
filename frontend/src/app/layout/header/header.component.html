@@ -1,0 +1,29 @@
+
+
+<header [ngStyle]="{height: headerHeight+'px'}">
+ <div class="header-bar" [ngStyle]="{'margin-top':posOpenIcons+((1-linearTransition)*-posClosedIcons)+'px'}">
+    <div id="rrss">
+      <fa-icon class="icon-rrss" [icon]="fainsta"></fa-icon>
+      <fa-icon class="icon-rrss" [icon]="fafacebook"></fa-icon>
+      <fa-icon class="icon-rrss" [icon]="fayoutube"></fa-icon>
+      <fa-icon class="icon-rrss" [icon]="famail"></fa-icon>
+    </div>
+    <div id="user">
+     <!-- <img class="lang" src="/assets/img/ico-eng.png">-->
+      <img class="lang" src="/assets/img/ico-eng.png">
+      <div class="login">
+        <img class="user-icon" src="/assets/img/ico_user.png">
+        <span id="ingresar">Ingresar</span>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="header-box">
+    <div class="row">
+
+        <img class="logo" src="/assets/img/logo-ventall.png"   [ngStyle]="{'opacity':linearTransition, 'top':posOpenLogo+((1-linearTransition)*-posClosedLogo)+'px'}"/>
+        <h1 class="title" [ngStyle]="{'top':posOpenTitle+((1-linearTransition)*-posClosedTitle)+'px'}" [routerLink]="['/']" routerLinkActive="router-link-active" ><img src="./assets/img/logo.png"></h1>
+    </div>
+  </div>
+</header>

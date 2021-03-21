@@ -1,0 +1,119 @@
+.quotes{
+    width: 100%;
+    background-image: url("../../../../../assets/img/05_Crew/background.jpg");
+    position: relative;
+    padding: 3em;
+    background-size: cover;
+
+}
+
+.center-quotes{
+  flex-wrap: wrap;
+  max-width: 1500px;
+  margin: auto;
+  justify-content: center;
+}
+
+
+.description, .title{
+    max-width: 340px;
+    width: 100%;
+    position: relative;
+    display: block;
+}
+
+
+app-text-title::before {
+    background: transparent url(/assets/img/01_about/objetivo/tick.png) scroll 0 0 no-repeat;
+    content: "";
+    width: 18px;
+    height: 20px;
+    position: absolute;
+    left: -5px;
+    top: 2px;
+    background-position: center;
+  }
+
+
+  .quotes-grid{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+    width: 850px;
+    height: 700px;
+
+  }
+  .quotes-container{
+    align-self: center;
+    width: 850px;
+    height: 700px;
+  }
+
+  .info{
+    margin-right: 5em;
+  }
+
+  .quote{
+    padding: 2px;
+  }
+/*    .quote-container{
+     padding: 1em;
+     padding: 1em;
+    position: relative;
+
+   } */
+   
+/* .quote-container:hover::before {
+
+    width: 0;
+    height: 0;
+    border-top: 12vw solid #00D48C;
+    border-left: 12vw solid transparent;
+    content: "";
+    position: absolute;
+    z-index: 1;
+    top: 0.2vw;
+    right: 0.1vw;
+} */
+
+  .quote img {
+    width: 200px;
+    height: 200px;
+    margin: auto;
+    display: block;
+    z-index: 2;
+    cursor: pointer;
+    position: relative;
+
+  }
+
+
+  @media only screen and (max-width: 1400px){
+    .quote img {
+      width: 150px;
+      height:150px;
+    }
+
+    .quotes-grid{
+      width: 700px;
+      height: 500px;
+
+    }
+
+    .center-quotes{
+      justify-content: space-around;
+      align-content: space-around;
+    }
+}
+
+  
+@media only screen and (max-width: 768px){
+    .description, .title{
+        max-width: 100%;
+    }
+    .info{
+        align-items: flex-center;
+    }
+}
+

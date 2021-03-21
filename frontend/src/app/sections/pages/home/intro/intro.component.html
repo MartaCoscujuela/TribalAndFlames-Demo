@@ -1,0 +1,10 @@
+<div class="row intro-container">
+  <div class="col-md-6 col-xl-6 intro-video">
+    <app-vimeo [videoId]="482704655"></app-vimeo>
+  </div>
+  <div class="col-md-6 col-xl-6 intro-text">
+    <app-text-title ref="home-title" alignStyle="left"></app-text-title>
+    <app-text ref="home-intro" alignStyle="left"></app-text>
+    <app-action-btn text="CONOCE MÁS" justifyStyle="start" (clicked)="onClick($event)"></app-action-btn>
+  </div>
+</div>

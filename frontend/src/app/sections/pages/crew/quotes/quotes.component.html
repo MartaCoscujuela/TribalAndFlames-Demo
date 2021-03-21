@@ -1,0 +1,20 @@
+
+<div class=" quotes">
+  <div class="center-quotes d-flex">
+    <div class="info">
+        <app-text-title class="title" ref="quotes-title" alignStyle="left" [textColor]="colorTitle"></app-text-title>
+        <app-text class="description" ref="quotes-text" [textColor]="colorText" alignStyle="left"></app-text>
+    </div>
+    <div class="quotes-container">
+        <ngx-slick-carousel #slickModal="slick-carousel" [config]="slideConfig"> 
+             <div ngxSlickItem *ngFor="let slide of slides; let i = index" class="slide">
+              <div class="quotes-grid">
+                <div *ngFor="let quote of slide" class="quote">
+                    <div class="quote-container"><img [src]="imgUrl +'/' +quote"/></div>
+                </div>
+              </div>
+            </div> 
+          </ngx-slick-carousel>
+        </div>
+      </div>
+  </div>

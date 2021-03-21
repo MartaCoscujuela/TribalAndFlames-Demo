@@ -1,0 +1,11 @@
+<div *ngIf="status === statusSuccess" class="alert alert-success" role="alert">
+  Contenido actualizado correctamente
+</div>
+
+<div *ngIf="status === statusPostingError" class="alert alert-danger" role="alert">
+  Error! No se ha podido actualizar el contenido
+</div>
+
+<div *ngIf="status === statusLoadingError" class="alert alert-danger" role="alert">
+  Error! No se ha podido descargar el contenido
+</div>

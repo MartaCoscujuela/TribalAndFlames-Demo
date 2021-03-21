@@ -1,0 +1,44 @@
+button {
+  border: none;
+  display: inline-block;
+  font-weight: 400;
+  text-align: center;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  user-select: none;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: 0.25rem;
+  color: white;
+  background-color: #fa413e;
+  border: none;
+  margin: 2em 0 0 0;
+  font-family: 'Rubik-Light', sans-serif;
+  min-width: 170px;
+}
+
+button:hover {
+  background-color: #a22e2a;
+  border: none;
+}
+
+@media screen and (max-width: 1300px) {
+  button {
+    margin-top: 1em;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  button {
+    margin: 10px;
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  button {
+    min-width: 123px;
+    font-size: 10px;
+  }
+}

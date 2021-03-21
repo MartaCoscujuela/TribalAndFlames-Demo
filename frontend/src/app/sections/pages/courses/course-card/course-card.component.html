@@ -1,0 +1,20 @@
+<div class="flag" [ngStyle]="{'background-color': course.color}">
+  <img [src]="course.imgFlag" width="90" />
+  <div class="title">CURSO REGULAR INICIAL T&F®</div>
+</div>
+<div class="card">
+  <img class="card-img-top" [src]="course.imgCard" alt="Card image cap" />
+  <div class="card-body">
+    <p class="card-detail" [ngStyle]="{'background-color': course.color}" >
+      <span class="card-detail-desc" [innerHTML]="course.description">
+      </span>
+      <span class="card-detail-price">
+        <span class="price">{{course.price}}</span> <span class="extra">{{course.extra}}</span>
+      </span>
+    </p>
+
+    <ul [ngStyle]="{'color': course.color}" class="card-text" [innerHTML]="course.bullets">
+    </ul>
+    <app-action-btn [disable]="!course.ready" [text]="course.cta" justifyStyle="center" (clicked)="onClick($event)"></app-action-btn>
+  </div>
+</div>

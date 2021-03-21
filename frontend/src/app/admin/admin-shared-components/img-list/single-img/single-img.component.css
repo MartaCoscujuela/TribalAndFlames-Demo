@@ -1,0 +1,19 @@
+.card{
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.background{
+  width: 70%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position-y: center;
+  background-position: center;
+}
+
+.buttons{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+

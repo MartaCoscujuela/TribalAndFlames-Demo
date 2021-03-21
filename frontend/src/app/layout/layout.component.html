@@ -1,0 +1,16 @@
+<app-header
+[headerHeight]="headerHeight"
+[linearTransition]="linearTransition"
+[posClosedTitle]="posClosedTitle"
+[posOpenTitle]="posOpenTitle"
+[posOpenLogo]="posOpenLogo"
+[posClosedLogo]="posClosedLogo"
+[posOpenIcons]="posOpenIcons"
+[posClosedIcons]="posClosedIcons"
+>
+</app-header>
+<app-menu [menuPos]="headerHeight" [solidBackground]="solidMenuBackground"></app-menu>
+<main [ngStyle]="{'margin-top': mainPos+'px'}">
+  <router-outlet></router-outlet>
+</main>
+<app-footer></app-footer>

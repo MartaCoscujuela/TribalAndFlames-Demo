@@ -1,0 +1,36 @@
+.course-editor {
+  background-color: gold;
+  width: 100%;
+  display: flex;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  height: 500px;
+}
+
+form {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+input[type='file'] {
+  visibility: hidden;
+}
+.img-data > div {
+  display: flex;
+  flex-direction: column;
+  height: 400px;
+  align-items: center;
+  justify-content: center;
+}
+
+.image-preview img {
+  width: 100%;
+}
+
+small {
+  color: red;
+  font-size: 10px;
+}

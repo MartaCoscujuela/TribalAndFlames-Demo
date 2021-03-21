@@ -1,0 +1,34 @@
+.statements-container{
+  background-color: #FA413E;
+  text-align: center;
+  font-size: 68px;
+}
+.statement{
+  color: white;
+  font-family: 'Bebas Neue Regular';
+  align-items: center;
+  justify-content: center;
+}
+
+.accent{
+  font-family: inherit;
+  color: #00FFA9;
+}
+
+@media (max-width: 1200px) {
+  .statements-container{
+    font-size: 60px;
+  }
+}
+
+@media (max-width: 900px) {
+  .statements-container{
+    font-size: 55px;
+  }
+}
+
+@media (max-width: 756px) {
+  .statements-container{
+    font-size: 32px;
+  }
+}

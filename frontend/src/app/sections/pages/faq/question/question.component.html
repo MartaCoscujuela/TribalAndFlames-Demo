@@ -1,0 +1,11 @@
+<div class="card row d-flex">
+    <div class="card-body col col-11">
+      <h5 class="card-title" [innerText]="question.title"></h5>
+      <p class="card-text" [ngClass]="{'open': open}" [innerHTML]="question.text"></p>
+    </div>
+    <div class="col col-1">
+      <img (click)="onClick($event)" class="arrow" [ngClass]="{'open': open}" src="../../../../../assets/img/shared/arrow.png">
+    </div>
+<!--     <app-action-btn class="col col-1" text="IR AL VENDEDOR" justifyStyle="left" (clicked)="onClick($event)"></app-action-btn>
+ -->  </div>
+  

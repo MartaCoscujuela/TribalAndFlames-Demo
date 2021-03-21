@@ -1,0 +1,20 @@
+main{
+  display: flex !important;
+  min-height: 100%;
+}
+
+aside{
+  background: #2f353a;
+  flex-shrink: 0;
+  -webkit-box-shadow: 0px 10px 20px 0px rgba(0,0,0,0.50);
+  -moz-box-shadow: 0px 10px 20px 0px rgba(0,0,0,0.50);
+  box-shadow: 0px 10px 20px 0px rgba(0,0,0,0.50);
+  position: relative;
+}
+
+section{
+  background-color: #ebebeb;
+  flex-shrink: 0;
+  flex: 1;
+  padding: 0 2em;
+}

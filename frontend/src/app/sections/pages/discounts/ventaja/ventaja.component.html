@@ -1,0 +1,9 @@
+  <div class="card">
+    <img class="card-img-top" [src]="ventaja.img" alt="Card image cap" />
+    <div class="card-body">
+      <h5 class="card-title" [innerText]="ventaja.title"></h5>
+      <p class="card-text" [innerHTML]="ventaja.text"></p>
+       <app-action-btn text="IR AL VENDEDOR" justifyStyle="left" (clicked)="onClick($event)"></app-action-btn>
+     </div>
+  </div>
+  

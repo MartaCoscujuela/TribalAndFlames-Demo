@@ -1,0 +1,11 @@
+
+<div class="d-flex showtime"  [ngStyle]="{ 'background-color': backgroundColor}">
+    <div class="col-12 col-sm-5">
+        <app-text-title ref="shows-title" [alignStyle]="titleAlign" [textColor]="titleColor"></app-text-title>
+    </div>
+    <div class="col-12 col-sm-7">
+        <app-text class="description" ref="show-description" alignStyle="left" [textColor]="textColor"></app-text>
+    </div>
+</div>
+<div class="arrow-down" [ngStyle]="{ 'border-top-color': backgroundColor}" ></div>
+

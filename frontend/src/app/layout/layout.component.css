@@ -1,0 +1,7 @@
+
+@media screen and (max-width: 768px) {
+  main{
+    -webkit-overflow-scrolling: touch;
+    overflow: auto;
+  }
+  }

@@ -1,0 +1,53 @@
+.intro-text {
+  padding: 3em;
+}
+
+.intro-video {
+  padding: 0em;
+}
+
+.intro-text {
+  max-width: 650px;
+  font-size: 18px;
+}
+
+app-text {
+  margin-bottom: 1em;
+}
+
+@media screen and (max-width: 1199px) {
+  h2 {
+    font-size: 1.7rem;
+  }
+  .intro-text {
+    padding: 0.5em;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  h2 {
+    font-size: 1.3rem;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .intro-video {
+    padding-top: 3em;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .intro-text {
+    padding: 2em;
+    max-width: none;
+    font-size: 22px;
+  }
+
+  .intro-container {
+    flex-direction: column-reverse;
+  }
+
+  .btn {
+    float: right;
+  }
+}

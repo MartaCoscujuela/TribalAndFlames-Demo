@@ -1,0 +1,37 @@
+<div class="row about">
+  <div class="col-md-6 anna piece" [appImgBackground]="'img-home-mosaic-1'">
+    <h2>NUESTRA PROFESORA</h2>
+    <h3>Anna de Mas</h3>
+    <app-action-btn text="CONOCER A ANNA" justifyStyle="center" (clicked)="onClick($event)"></app-action-btn>
+  </div>
+  <div class="col-md-6 crew piece">
+    <h2>NUESTRXS ALUMNXS</h2>
+    <h3>
+      Cada Promoción de alumnxs<br />
+      forma parte de la T&F Crew.<br />
+      ¡Y tú también puedes!
+    </h3>
+    <app-action-btn text="CONOCER A LA CREW" justifyStyle="center" (clicked)="onClick($event)"></app-action-btn>
+  </div>
+</div>
+
+<div class="shows col-12 piece">
+  <div id="video2"></div>
+  <h2>¿QUIERES VER NUESTROS <span class="accent">SHOWS</span>?</h2>
+  <p>
+    Todos han sido estudiados en clase durante el curso regular.<br />
+    ¡Tú también puedes formar parte de ellos!
+  </p>
+
+  <app-action-btn text="VER MÁS" justifyStyle="center" (clicked)="onClick($event)"></app-action-btn>
+  <div class="play"><img *ngIf="!videoPlaying" src="/assets/img/shared/play.png" /></div>
+</div>
+
+<div class="fans col-12 piece">
+  <h2>¿NO TIENES ABANICOS?</h2>
+  <p>
+    Te contamos como construirte unos de ensayo en tu casa<br />
+    y te ofrecemos un descuento en los Lotus Fire Fans de LuSolShop
+  </p>
+  <app-action-btn text="VER MÁS" justifyStyle="center" (clicked)="onClick($event)"></app-action-btn>
+</div>

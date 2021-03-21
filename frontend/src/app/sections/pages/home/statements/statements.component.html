@@ -1,0 +1,8 @@
+<div class="statements-container">
+  <ngx-slick-carousel class="carousel"
+  [config]="slideConfig">
+  <div ngxSlickItem *ngFor="let statement of statements" class="statement" [innerHTML]=statement>
+  </div>
+</ngx-slick-carousel>
+
+</div>

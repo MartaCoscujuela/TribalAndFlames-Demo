@@ -1,0 +1,29 @@
+
+<div class="d-flex promociones">
+    <div class="container p-5">
+        <app-text-title ref="promo-title" alignStyle="center" [textColor]="colorTitle"></app-text-title>
+        <app-text ref="promo-text" alignStyle="center" [textColor]="colorText"></app-text>
+    </div>
+    <div class="row promo-pics">
+        <div class="col col-sm-6  col-md-3">
+            <img src="../../../../../assets/img/05_Crew/promos/0.jpg">
+            <app-action-btn text="VER PROMO I" justifyStyle="center" (clicked)="onClick($event)"></app-action-btn>
+
+        </div>
+        <div class="col col-sm-6  col-md-3">
+            <img src="../../../../../assets/img/05_Crew/promos/1.jpg">
+            <app-action-btn text="VER PROMO II" justifyStyle="center" (clicked)="onClick($event)"></app-action-btn>
+
+        </div>
+        <div class="col col-sm-6  col-md-3">
+            <img src="../../../../../assets/img/05_Crew/promos/2.jpg">
+            <app-action-btn text="VER PROMO III" justifyStyle="center" (clicked)="onClick($event)"></app-action-btn>
+
+        </div>
+        <div class="col col-sm-6 col-md-3">
+            <img src="../../../../../assets/img/05_Crew/promos/3.jpg">
+            <app-action-btn text="VER PROMO ONLINE" justifyStyle="center" (clicked)="onClick($event)"></app-action-btn>
+
+        </div>
+    </div>
+</div>

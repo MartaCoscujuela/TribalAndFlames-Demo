@@ -1,0 +1,23 @@
+.contact{
+  background-color: #8A66B6;
+  color: white;
+  font-family: 'Rubik', sans-serif;
+  font-weight: regular;
+  flex-direction: column;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  text-align: center;
+}
+
+p{
+  max-width: 700px;
+  margin: 38px auto 24px auto;
+}
+
+@media (max-width: 600px) {
+  .contact p{
+    font-size: 15px;
+    padding: 1em;
+  }
+}

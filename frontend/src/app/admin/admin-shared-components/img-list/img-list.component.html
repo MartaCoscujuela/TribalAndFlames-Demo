@@ -1,0 +1,27 @@
+
+<div class="container">
+  <div class="row p-md-0 card-container">
+
+    <div class="card col-12 p-0 mt-5 m-lg-3">
+
+      <div class="card-header d-flex  justify-content-between d-flex align-items-center">
+       {{ name | uppercase }} - <!-- {{currentLang | uppercase}} -->
+<!--         <button (click)=changeLang() class="btn btn-primary float-right">{{oppositeLang()}}</button>
+ -->      </div>
+
+      <app-loading *ngIf="status === loadingStatus"></app-loading>
+
+      <div class="card-body" *ngIf="status !== loadingStatus">
+
+       <app-error [status]="status"></app-error>
+       <button (click)="filePicker.click()" class="btn btn-primary mb-3">Añadir imagen</button>
+       <input type="file" #filePicker (change)="onImagePicked($event)">
+
+        <div *ngIf=images>
+          <app-single-img *ngFor="let img of images.esp" [image]="img" [maxOrder]="images.esp.length-1" (changeMe)="changeOrderItems($event)" (deleteMe)="deleteItem($event)"></app-single-img>
+        </div>
+       <button (click)="onSubmit()" class="btn btn-primary mb-3">Guardar</button>
+
+      </div>
+    </div>
+  </div>

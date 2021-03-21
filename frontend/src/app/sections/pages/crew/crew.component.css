@@ -1,0 +1,9 @@
+app-cta{
+    position: relative;
+    top: -2em;
+    margin: -50px;
+}
+
+.container{
+    padding-bottom: 0 !important;
+}

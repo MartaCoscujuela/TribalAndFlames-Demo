@@ -1,0 +1,118 @@
+/* You can add global styles to this file, and also import other style files */
+$primary: #ff693a;
+
+@import '../node_modules/bootstrap/scss/bootstrap';
+
+* {
+  outline: none !important;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+@font-face {
+  font-family: Rubik;
+  src: url('/assets/Rubik/Rubik-VariableFont_wght.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Bebas Neue Regular';
+  src: url('/assets/fonts/bebas/BebasNeue-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+@font-face {
+  font-family: 'Century Schoolbook';
+  src: url('/assets/fonts/century/CenturySchoolbook.woff2') format('woff2'),
+    url('/assets/fonts/century/CenturySchoolbook.woff') format('woff'),
+    url('/assets/fonts/century/CenturySchoolbook.ttf') format('truetype'),
+    url('/assets/fonts/century/CenturySchoolbook.svg#CenturySchoolbook') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Century Schoolbook';
+  src: url('/assets/fonts/century/CenturySchoolbook-BoldItalic.eot');
+  src: url('/assets/fonts/century/CenturySchoolbook-BoldItalic.eot?#iefix') format('embedded-opentype'),
+    url('/assets/fonts/century/CenturySchoolbook-BoldItalic.woff2') format('woff2'),
+    url('/assets/fonts/century/CenturySchoolbook-BoldItalic.woff') format('woff'),
+    url('/assets/fonts/century/CenturySchoolbook-BoldItalic.ttf') format('truetype'),
+    url('/assets/fonts/century/CenturySchoolbook-BoldItalic.svg#CenturySchoolbook-BoldItalic') format('svg');
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+
+.slick-dots li button:before {
+  opacity: 0.5;
+  color: white;
+}
+
+.slick-dots li.slick-active button:before {
+  color: white;
+  opacity: 1;
+}
+
+.slick-dots {
+  bottom: 25px;
+}
+
+.slick-dotted.slick-slider {
+  margin-bottom: 0px;
+}
+
+iframe {
+  width: 100%;
+}
+
+.vp-center {
+  height: auto;
+}
+
+*,
+.row {
+  margin: 0;
+  padding: 0;
+  font-family: 'Rubik', sans-serif;
+}
+
+.accent {
+  font-family: inherit;
+  color: #00ffa9;
+  padding: 0 0.2em;
+}
+
+button {
+  border: none;
+  display: inline-block;
+  font-weight: 400;
+  text-align: center;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  user-select: none;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: 0.25rem;
+  color: white;
+}
+
+p {
+  font-size: 18px;
+  margin-bottom: 0;
+  font-family: 'Rubik-Light', sans-serif;
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 970px;
+  }
+}

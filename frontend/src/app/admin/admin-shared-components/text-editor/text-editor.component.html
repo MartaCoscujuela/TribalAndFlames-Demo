@@ -1,0 +1,36 @@
+<div class="container">
+  <div class="row p-md-0 card-container">
+    <div class="card col-12 p-0 mt-5 m-lg-3">
+      <div class="card-header d-flex justify-content-between d-flex align-items-center">
+        {{ name | uppercase }}
+        <!-- - {{currentLang | uppercase}} -->
+        <!--         <button (click)=changeLang() class="btn btn-primary float-right">{{oppositeLang()}}</button>
+ -->
+      </div>
+
+      <app-loading *ngIf="status === loadingStatus"></app-loading>
+
+      <div *ngIf="status !== loadingStatus" class="card-body">
+        <app-error [status]="status"></app-error>
+
+        <form [formGroup]="textForm" (ngSubmit)="onSubmit()">
+          <div *ngFor="let lang of langs">
+            <p-editor [formControlName]="lang" [style]="{ height: height + 'px' }" *ngIf="lang === currentLang">
+              <p-header>
+                <span class="ql-formats">
+                  <button class="ql-bold" aria-label="Bold"></button>
+                  <button class="ql-italic" aria-label="Italic"></button>
+                  <button class="ql-underline" aria-label="Underline"></button>
+                </span>
+                <span class="ql-formats">
+                  <button aria-label="Link" class="ql-link"></button>
+                </span>
+              </p-header>
+            </p-editor>
+          </div>
+          <button type="submit" class="btn btn-primary">Guardar</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,51 @@
+.bottom-reel {
+  background-image: url('/assets/img/01_about/interview/bg.jpg');
+  padding: 55px 1em 35px 1em;
+  background-size: cover;
+  height: 500px;
+}
+
+h2 {
+  color: white;
+  font-family: 'Bebas Neue Regular', sans-serif;
+  font-size: 52px;
+  text-align: center;
+  margin-bottom: 0;
+}
+
+p {
+  color: white;
+  font-family: 'Rubik', sans-serif;
+  font-weight: lighter;
+  text-align: center;
+  max-width: 900px;
+  margin: auto;
+  margin-top: 0px;
+  padding: 0 0.2em;
+}
+
+ngx-slick-carousel {
+  max-width: 1200px;
+  width: 80%;
+  margin: auto;
+}
+
+::ng-deep.wrapper{
+  padding: 0 1em;
+  min-height: 290px;
+}
+
+::ng-deep.slick-arrow::before {
+  content: url('./../../../../assets/img/shared/arrow.png');
+}
+
+::ng-deep.slick-prev {
+  transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+}
+
+.video {
+  max-width: 550px;
+  margin: 20px auto 0 auto;
+}
+

@@ -1,0 +1,29 @@
+:host {
+  width: 100%;
+}
+
+.wrapper {
+  width: 100%;
+  position: relative;
+}
+
+.play {
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.play img {
+  position: absolute;
+  height: 12%;
+  width: auto;
+  left: 47%;
+  top: 44%;
+}
+
+.video {
+  width: 100%;
+}

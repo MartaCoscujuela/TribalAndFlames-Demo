@@ -1,0 +1,13 @@
+.banner {
+  background-image: url('/assets/img/01_about/banner.png');
+  width: 100%;
+  height: 26vw;
+  background-size: cover;
+  background-position: center;
+}
+
+@media screen and (max-width: 992px) {
+  .banner {
+    min-height: 400px;
+  }
+}

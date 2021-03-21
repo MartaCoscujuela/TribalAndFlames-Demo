@@ -1,0 +1,211 @@
+.about div {
+  height: 28vw;
+}
+
+.piece {
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 0;
+  margin: 0;
+}
+
+/* .anna {
+  background-image: url('/assets/img/00_home/about/anna.jpg');
+} */
+
+.crew {
+  background-image: url('/assets/img/00_home/about/crew.jpg');
+}
+
+.shows {
+  background-image: url('/assets/img/00_home/about/shows.jpg');
+  height: 28vw;
+}
+
+.fans {
+  background-image: url('/assets/img/00_home/about/fans.jpg');
+  height: 36vw;
+}
+
+h2 {
+  color: white;
+  font-family: 'Bebas Neue Regular', cursive;
+  font-size: 71px;
+}
+
+.about h2 {
+  font-size: 52px;
+  text-align: right;
+  line-height: 0.5em;
+  margin-bottom: 0;
+  margin-right: 40px;
+  margin-top: 40px;
+}
+
+.about h3 {
+  font-family: 'Century Schoolbook', cursive, serif;
+  font-style: italic;
+  color: white;
+  text-align: right;
+  font-size: 20px;
+  padding-top: 5px;
+  margin-right: 40px;
+  position: relative;
+  right: 0;
+}
+
+h3 div {
+  max-width: 240px;
+  display: inline-block;
+}
+
+.shows h2,
+.fans h2 {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  margin-bottom: 0;
+  line-height: 0.9em;
+}
+
+.shows {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+}
+
+.fans {
+  display: flex;
+  justify-content: flex-start;
+  align-content: center;
+  flex-direction: column;
+  padding-top: 2em;
+}
+.shows p,
+.fans p {
+  font-family: 'Rubik', sans-serif;
+  position: relative;
+  z-index: 1;
+  color: white;
+  text-align: center;
+  font-size: 18px;
+  margin-top: 0;
+  padding-top: 0;
+}
+
+.about app-action-btn {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  bottom: 30px;
+}
+
+.shows app-action-btn,
+.fans app-action-btn {
+  position: relative;
+  z-index: 1;
+  margin: 0 auto;
+}
+
+#video2 {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
+.play {
+  position: absolute;
+  top: 3vw;
+  right: 3vw;
+  height: 12%;
+}
+
+.play img {
+  height: 100%;
+  width: auto;
+}
+
+@media screen and (max-width: 1600px) {
+  h2 {
+    font-size: 53px;
+  }
+
+  .about h3,
+  .shows p,
+  .fans p {
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .about h2 {
+    margin-right: 10px;
+    margin-top: 15px;
+  }
+
+  .about h3 {
+    margin-right: 10px;
+  }
+}
+@media screen and (max-width: 1050px) {
+  .about h2 {
+    font-size: 30px;
+  }
+}
+@media screen and (max-width: 768px) {
+  h2 {
+    font-size: 20px;
+  }
+  .about div {
+    height: 56.2vw;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .shows h2,
+  .shows p,
+  .fans p {
+    margin: 0;
+  }
+
+  .fans {
+    justify-content: center;
+    padding-top: 0;
+  }
+
+  p {
+    text-shadow: 0px 0px 8px rgba(0, 0, 0, 1), 0px 0px 8px rgba(0, 0, 0, 1), 0px 0px 8px rgba(0, 0, 0, 1),
+      0px 0px 8px rgba(0, 0, 0, 1), 0px 0px 8px rgba(0, 0, 0, 1);
+  }
+
+  h2,
+  h3 {
+    text-shadow: 0px 0px 8px rgba(0, 0, 0, 1), 0px 0px 8px rgba(0, 0, 0, 1);
+  }
+
+  .fans app-action-btn,
+  .shows app-action-btn,
+  .about app-action-btn {
+    left: 0;
+    right: 0;
+    margin: auto;
+    bottom: 0px;
+    position: absolute;
+  }
+
+  .shows {
+    justify-content: start;
+    padding-top: 1em;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .fans p,
+  .shows p {
+    font-size: 10px;
+  }
+}

@@ -1,0 +1,20 @@
+.promociones{
+    width: 100%;
+    background-image: url("../../../../../assets/img/05_Crew/promociones.jpg");
+    position: relative;
+    padding: 3em;
+    flex-wrap: wrap;
+    min-height: 500px;
+    background-size: cover;
+    padding-bottom: 5em;
+}
+
+.promo-pics{
+    max-width: 1300px;
+    margin: auto;
+}
+
+.promo-pics div img{
+    width: 100%;
+    height: auto;
+}
